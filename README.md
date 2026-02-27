@@ -1,81 +1,107 @@
-# 🎙️ Lecture Voice-to-Notes Generator
-
-An AI-powered web application that converts recorded lecture audio into clean, structured, and readable notes automatically.
-
-🔗 **Live Demo:** https://prajwal-0936.github.io/Lecture-Voice-to-Notes-Generator/ 
-
 ---
+title: Lecture Voice-to-Notes Generator
+emoji: 🎙️
+colorFrom: blue
+colorTo: purple
+sdk: streamlit
+sdk_version: "1.32.0"
+app_file: app.py
+pinned: false
+---
+# 📘 Lecture Voice-to-Notes Generator
 
-## 📌 Problem Statement
+## 🎓 Project Overview
+Students often miss important points during lectures because it is difficult to listen, understand, and write notes simultaneously.  
+This project solves the problem by converting **lecture audio/video into text**, generating **structured study notes**, and creating an **interactive quiz** using modern AI models.
 
-Students often record lectures but spend hours manually converting them into written notes.  
-This project automates the process using AI — transforming voice recordings into structured study-ready notes in seconds.
+The system is designed as a **final-year major project** and demonstrates the practical application of **Speech-to-Text AI** and **Generative AI**.
 
 ---
 
 ## 🚀 Features
-
-- 🎧 Upload lecture audio files (.mp3, .wav, .m4a)
-- 🧠 Automatic speech-to-text transcription
-- 📝 AI-generated structured lecture notes
-- ⚡ Fast and user-friendly interface
-- 🌐 Deployed on Hugging Face Spaces
-
----
-
-## 🛠️ Tech Stack
-
-- Python
-- Hugging Face Transformers
-- Speech-to-Text Models
-- NLP Summarization Models
-- Gradio (for UI)
-- Hugging Face Spaces (Deployment)
+- 🎙 Upload lecture **audio or video** files
+- 📝 Automatic **English transcription** using Whisper
+- 📚 AI-generated **study notes**
+- 🧠 AI-generated **MCQ quiz**
+- 🧪 Interactive quiz with:
+  - No default answers
+  - Score calculation
+  - Correct (🟢) / Incorrect (🔴) feedback
+- ⬇ Download:
+  - Transcript
+  - Study notes
+  - Quiz with answers
+- 🔐 Secure **API key input via UI** (no hardcoded keys)
 
 ---
 
-## 🏗️ How It Works
+## 🛠️ Technology Stack
 
-1. User uploads an audio lecture file.
-2. The system transcribes audio into raw text using speech recognition.
-3. The transcript is processed using NLP models.
-4. Structured, readable notes are generated and displayed.
+### Programming Language
+- Python 3.9+
 
----
+### Framework & Libraries
+- Streamlit (User Interface)
+- Whisper (Speech-to-Text)
+- Groq API (LLaMA-3.1)
+- FFmpeg (Audio/Video processing)
 
-## 🎯 Use Cases
-
-- Students converting recorded lectures into notes
-- Online course learners
-- Educational content creators
-- Researchers and professionals
-
----
-
-## 🌍 Deployment
-
-This application is deployed on **Hugging Face Spaces**.
-
-Live Link:
-👉 https://prajwal-0936.github.io/Lecture-Voice-to-Notes-Generator/
+### AI Models
+- **Speech-to-Text:** Whisper
+- **Text Generation:** Groq LLaMA-3.1-8B-Instant
 
 ---
 
-## 👨‍💻 Author
-
-**Prajwal Nale**  
-Backend & AI Enthusiast  
-India 🇮🇳
-
----
-
-## ⭐ Future Improvements
-
-- Multi-language support
-- Export notes as PDF
-- Cloud storage integration
-- Improved formatting and bullet structuring
+## 🧩 System Architecture
+1. User uploads lecture audio or video
+2. Audio is transcribed into English text
+3. Transcript is summarized into structured study notes
+4. Quiz is generated from the transcript
+5. User attempts the quiz and receives a score
+6. Outputs can be downloaded for offline study
 
 ---
 
-If you found this project useful, feel free to ⭐ the repository!
+## 🔑 API Key Configuration (Groq)
+
+This project uses the **Groq API** for free and fast LLM inference.
+
+### Steps:
+1. Visit: https://console.groq.com/keys
+2. Create a **free Groq API key**
+3. Paste the key into the **sidebar input** in the application
+4. Click **“Enable AI”**
+
+⚠️ No environment variables are required  
+⚠️ API keys are **never stored in the source code**
+
+---
+
+## ▶️ How to Run the Project
+
+### 1️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
+
+## 📊 Use Cases
+- College students  
+- Online learners  
+- Lecture revision  
+- Exam preparation  
+- Self-study automation  
+
+---
+
+## 🧠 Learning Outcomes
+- Understanding Speech-to-Text systems  
+- Applying Generative AI in real-world applications  
+- Streamlit state management  
+- Secure API handling  
+- End-to-end AI system design  
+
+---
+
+## 🏁 Conclusion
+The Lecture Voice-to-Notes Generator provides an effective solution for automated lecture understanding. By combining speech recognition and generative AI, the system improves learning efficiency and reduces manual effort for students.
+
+

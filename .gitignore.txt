@@ -1,0 +1,9 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Runtime data
+data/audio/*
+data/notes/*
+data/transcripts/*
+!data/**/.gitkeep
