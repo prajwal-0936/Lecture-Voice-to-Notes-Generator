@@ -2,7 +2,7 @@
 
 An AI-powered web application that converts recorded lecture audio into clean, structured, and readable notes automatically.
 
-🔗 **Live Demo:** https://prajwal-0936-lecture-voice-notes.hf.space  
+🔗 **Live Demo:** https://prajwal-0936.github.io/Lecture-Voice-to-Notes-Generator/ 
 
 ---
 
@@ -57,7 +57,7 @@ This project automates the process using AI — transforming voice recordings in
 This application is deployed on **Hugging Face Spaces**.
 
 Live Link:
-👉 https://prajwal-0936-lecture-voice-notes.hf.space
+👉 https://prajwal-0936.github.io/Lecture-Voice-to-Notes-Generator/
 
 ---
 
